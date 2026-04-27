@@ -4,6 +4,7 @@ doStuff() {
     sudo cp ./gnome-terminal.py /usr/bin/gnome-terminal
     sudo chown root:root /usr/bin/gnome-terminal
     sudo chmod 755 /usr/bin/gnome-terminal
+    sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/ghostty 10
 }
 
 ls /usr/bin/gnome-terminal
