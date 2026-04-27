@@ -5,6 +5,7 @@ doStuff() {
     sudo chown root:root /usr/bin/gnome-terminal
     sudo chmod 755 /usr/bin/gnome-terminal
     sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/bin/ghostty 10
+    gsettings set org.gnome.desktop.default-applications.terminal exec 'ghostty'
 }
 
 ls /usr/bin/gnome-terminal
